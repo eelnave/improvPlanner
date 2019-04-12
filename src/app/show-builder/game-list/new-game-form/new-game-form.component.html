@@ -1,0 +1,33 @@
+<form (ngSubmit)="onSubmit(newGameForm)" #newGameForm>
+  <mat-form-field>
+    <input
+      matInput
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Game name"
+      ngModel
+      required />
+  </mat-form-field>
+  <mat-form-field>
+    <textarea
+      matInput
+      id="description"
+      name="description"
+      rows="3"
+      placeholder="Description"
+      ngModel
+      required></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      id="numberOfPlayers"
+      name="numberOfPlayers"
+      placeholder="Number of Players"
+      ngModel
+      required />
+  </mat-form-field>
+  <button mat-flat-button type="submit">Add Game</button>
+</form>

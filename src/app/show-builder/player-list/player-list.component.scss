@@ -1,0 +1,15 @@
+.player-list {
+  width: 20vw;
+  height: 95vh;
+  background-color: blue;
+}
+
+.cdButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin: 1vh;
+}

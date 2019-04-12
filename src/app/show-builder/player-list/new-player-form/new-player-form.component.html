@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit(newPlayerForm)" #newPlayerForm="ngForm">
+  <mat-form-field>
+    <input matInput
+    type="text"
+    id="firstName"
+    name="firstName"
+    placeholder="First Name"
+    ngModel
+    required />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+    matInput
+    type="text"
+    id="lastName"
+    name="lastName"
+    placeholder="Last Name"
+    ngModel
+    required>
+  </mat-form-field>
+  <button mat-flat-button type="submit">Add Player</button>
+</form>
